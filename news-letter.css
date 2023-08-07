@@ -1,0 +1,253 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    background-color:hsl(234, 29%, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 619px;
+    
+}
+.sub-container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 350px;
+
+}
+
+.image-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.image{
+    width: 300px;
+    height: 330px;
+    margin-right: -27px;
+    margin-bottom: -3px;
+    }
+.desktop-image{
+    width: 300px;
+    height: 330px;
+    margin-right: -27px;
+    margin-bottom: -3px;
+}
+
+.write-up{
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Arial;
+    height: 200px;
+    margin-top: -60px;
+}
+.write-up-topic{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-right: -10px;
+    margin-left: 45px;
+    margin-bottom: 13px;
+}
+.details{
+    font-size: 13px;
+    margin-top: 0px;
+    margin-left: 45px;
+    margin-bottom: 10px;
+    
+}
+.bullet-write-ups{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+    height: 23px;
+    margin-top: 0px;
+}
+.bullet-image{
+    width: 14px;
+    height: 20px;
+}
+.text-write-up{
+    font-size: 13px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+.email{
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    margin-left: 45px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+.wrong-email{
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    margin-left: 220px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: -15px;
+    color: red;
+    opacity: 0;  
+}
+.wrong-email-visible{
+    opacity: 1;
+}
+.input{
+    margin-left: 45px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 9px;
+    margin-top: 0px;
+    font-family: Roboto, Arial;
+    font-size: 13px;
+    width: 270px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.input::placeholder{
+    font-size: 13px;
+}
+.input-visible{
+    border: 1px solid red;
+    background-color: rgb(252, 229, 229);
+    color: red;
+    
+}
+.subscribe-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 45px;
+    padding: 11px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.subscribe-button:hover{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0px 2px 15px hsl(4, 100%, 67%);
+}
+.input:hover{
+    border: 1px solid black;
+}
+.subscribe-button:active{
+    color: hsl(234, 29%, 20%);
+    opacity: 0.8;
+}
+
+@media(min-width: 768px) {
+    .mobile-image{
+        display: none;
+    }
+    .container{
+        background-color:hsl(234, 29%, 20%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    .sub-container{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: 350px;
+        margin-top: 62px;
+        margin-bottom: 62px;
+        border-radius: 15px;
+    }
+    
+    
+    
+}
+@media(max-width: 767px) {
+    .desktop-image{
+        display: none;
+    }
+    .container{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 605px;
+    }
+    .sub-container{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: 600px;
+    }
+    .mobile-image{
+        margin-top: -200px;
+        width: 280px;
+    }
+    .write-up{
+        margin-top: 30px;
+        width: 300px;
+        line-height: 30px;
+        margin-left: -30px;
+    }
+    .text-write-up{
+        line-height: 15px;
+    
+    }
+    .bullet-write-ups{
+        height: 40px;
+    }
+    .details{
+        line-height: 20px;
+    }
+    .email{
+        margin-top: 0px;
+    }
+    .input{
+        width: 220px;
+        padding: 13px;
+        font-size: 15px;
+    }
+    .input::placeholder{
+        font-size: 15px;
+    }
+    .subscribe-button{
+        width: 248px;
+        padding: 14px;
+        margin-top: 13px;
+    }
+    .wrong-email{
+        font-family: Roboto, Arial;
+        font-size: 11px;
+        margin-left: 170px;
+        margin-top: -35px;
+        font-weight: bold;
+        color: red;
+        opacity: 0;
+    }
+    .wrong-email-visible{
+        opacity: 1;
+    }
+    .input-visible{
+        border: 1px solid red;
+        background-color: rgb(252, 229, 229);
+        color: red;
+    }
+    
+}
